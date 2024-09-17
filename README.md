@@ -96,7 +96,6 @@ The CSV file will contain the following columns:
 
 - **main.py**: The main Python script for scraping and generating the CSV file.
 - **requirements.txt**: Lists the Python libraries required for the project.
-- **environment.yml**: (Optional) Conda environment file for setting up dependencies.
 - **hurricanes_1975.csv**: The output CSV file with the extracted hurricane data.
 - **methodology.txt**: A brief explanation of the approach used for scraping and processing the data.
 - **.env**: Contains the OpenAI API key (this should not be committed to version control).
