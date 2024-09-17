@@ -2,6 +2,8 @@
 
 This project scrapes data from the Wikipedia page on the **1975 Pacific hurricane season** and structures the data into a CSV file. The project uses Python along with web scraping and language model processing tools like **BeautifulSoup** and **OpenAI GPT**.
 
+![](1975_Pacific_hurricane_season_summary_map_new.png)
+
 ## Features
 
 - Scrapes hurricane data (name, dates, number of deaths, and affected areas) from Wikipedia.
