@@ -48,8 +48,8 @@ conda activate hurricane_scraper
 #### Using virtualenv:
 
 ```bash
-python -m venv env
-source env/bin/activate  # On Windows use env\Scripts\activate
+python -m venv hurricane_scraper
+source hurricane_scraper/bin/activate  # On Windows use env\Scripts\activate
 ```
 
 ### Step 3: Install Dependencies
@@ -95,9 +95,10 @@ The CSV file will contain the following columns:
 ## Files
 
 - **main.py**: The main Python script for scraping and generating the CSV file.
+- **notebook.ipynb**: The jupyter notebook describing the main Python script.
 - **requirements.txt**: Lists the Python libraries required for the project.
 - **hurricanes_1975.csv**: The output CSV file with the extracted hurricane data.
-- **methodology.txt**: A brief explanation of the approach used for scraping and processing the data.
+- **methodology.md**: A brief explanation of the approach used for scraping and processing the data.
 - **.env**: Contains the OpenAI API key (this should not be committed to version control).
 
 ## Methodology
