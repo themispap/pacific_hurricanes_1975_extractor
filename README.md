@@ -109,4 +109,4 @@ The data extraction process involves scraping Wikipedia data using BeautifulSoup
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
