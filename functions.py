@@ -3,8 +3,6 @@ import requests
 from bs4 import BeautifulSoup
 from openai import OpenAI
 from dotenv import load_dotenv
-import json
-import pandas as pd
 from datetime import datetime
 
 load_dotenv()
@@ -16,6 +14,9 @@ def extract_info_from_text(text):
     2. A list of areas affected (dictionary key='areas_affected') (mention locations only).
 
     Text: {text}
+
+    * No need to use ```Python ```
+    * Use only double quotes (")
     """
     response = client.chat.completions.create(
     model="gpt-3.5-turbo",
@@ -23,13 +24,10 @@ def extract_info_from_text(text):
             {"role": "system", "content": "You are an expert assistant who extracts useful information from text."},
             {"role": "user", "content": prompt}
     ]
-    # max_tokens=15  # Maximum number of tokens to generate
     )
     # Extract the response content
-    text_response = response.choices[0].message.content
-    # Convert the JSON string to a Python dictionary
-    result = json.loads(text_response)
-    return result
+    # text_response = response.choices[0].message.content
+    return response
 
 
 # Get the content of the page
