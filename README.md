@@ -51,7 +51,7 @@ conda activate hurricane_scraper
 
 ```bash
 python -m venv hurricane_scraper
-source hurricane_scraper/bin/activate  # On Windows use env\Scripts\activate
+source hurricane_scraper/bin/activate  # On Windows use hurricane_scraper\Scripts\activate
 ```
 
 ### Step 3: Install Dependencies
@@ -97,15 +97,17 @@ The CSV file will contain the following columns:
 ## Files
 
 - **main.py**: The main Python script for scraping and generating the CSV file.
+- **functions.py**: The python file containing custom utility functions
 - **notebook.ipynb**: The jupyter notebook describing the main Python script.
 - **requirements.txt**: Lists the Python libraries required for the project.
 - **hurricanes_1975.csv**: The output CSV file with the extracted hurricane data.
 - **methodology.md**: A brief explanation of the approach used for scraping and processing the data.
+- **log.txt**: Log file containing token usage information
 - **.env**: Contains the OpenAI API key (this should not be committed to version control).
 
 ## Methodology
 
-The data extraction process involves scraping Wikipedia data using BeautifulSoup and then utilizing OpenAI's language model (GPT) to parse unstructured text into a structured format. The extracted data is cleaned and written into a CSV file. The methodology includes data validation to ensure that missing values, dates, and names are handled appropriately, and duplicate data is removed.
+The data extraction process involves scraping Wikipedia data using BeautifulSoup and then utilizing OpenAI's language model (GPT) to parse unstructured text into a structured format. The extracted data is cleaned and written into a CSV file. The methodology includes data validation to ensure that missing values, dates, and names are handled appropriately, and duplicate data is removed. (see [methodology.md](methodology.md))
 
 ## License
 
